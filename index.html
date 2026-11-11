@@ -22,6 +22,12 @@ section{padding-block:44px;border-bottom:1px solid var(--line)}
 h2{font-family:var(--display);font-weight:700;font-size:24px;margin:0 0 12px}
 p{margin:0 0 12px;max-width:60ch}
 .en{color:var(--muted)}
+header .en{color:var(--on-red)}
+.logo{width:112px;height:112px;border-radius:50%;display:block}
+.hero-photo{display:block;width:100%;height:auto;max-height:70vh;object-fit:cover}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.pair img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;display:block;border-radius:6px}
+@media (max-width:480px){.pair{grid-template-columns:1fr}}
 dl{display:grid;grid-template-columns:auto 1fr;gap:8px 20px;margin:0}
 dt{color:var(--muted)}dd{margin:0}
 a{color:var(--red)}
@@ -32,16 +38,19 @@ footer{padding-block:28px;color:var(--muted);font-size:14px}
 </head>
 <body>
 <header><div class="w">
+<img class="logo" src="logo.png" alt="Crêpe Deck Logo" width="112" height="112">
 <h1>Crêpes &amp; Hot Chocolate aus der alten Cassons-Gondel</h1>
 <p class="sub">Berghaus Nagens · Flims Laax · Eröffnung im Dezember 2026</p>
 <p class="sub en">Crêpes &amp; hot chocolate in the old Cassons gondola. Opening December 2026.</p>
-<a class="btn" href="https://www.instagram.com/" rel="noopener">Folge uns auf Instagram</a>
+<a class="btn" href="https://www.instagram.com/crepedeck" rel="noopener">Folge uns auf Instagram</a>
 </div></header>
+<img class="hero-photo" src="gondel-weit.jpg" alt="Die rote Cassons-Gondel beim Berghaus Nagens in der Herbstsonne" width="1400" height="1050">
 <main class="w">
 <section>
 <h2>Die Gondel</h2>
 <p>Die alte Cassons-Gondel bekommt 70 Jahre nach ihrer ersten Fahrt ein zweites Leben: Wir bauen sie zu einem kleinen Stand für Crêpes und heisse Schokolade um, mitten am Berg.</p>
 <p class="en">Seventy years after its first ride, the old Cassons gondola gets a second life as a small stand for crêpes and hot chocolate, right on the mountain.</p>
+<div class="pair"><img src="gondel-berge.jpg" alt="Die Gondel vor dem Bergpanorama" loading="lazy"><img src="gondel-detail.jpg" alt="Detail der Gondel mit Flims-Laax-Falera-Schild" loading="lazy"></div>
 </section>
 <section>
 <h2>Wo</h2>

@@ -1,1 +1,59 @@
-
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crêpe Deck</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap">
+<style>
+:root{--red:#AE3426;--red-dark:#8A271C;--paper:#FBF7F4;--ink:#241512;--muted:#6B5A55;--line:#E7DDD7;--on-red:#FFF;
+--display:'Poppins',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#1C1412;--ink:#F3E9E4;--muted:#BBA9A2;--line:#3A2C28;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#1C1412;--ink:#F3E9E4;--muted:#BBA9A2;--line:#3A2C28;color-scheme:dark}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;margin:0}
+.w{max-width:720px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+header{background:var(--red);color:var(--on-red)}
+header .w{padding-block:48px 56px;display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,7vw,46px);line-height:1.12;margin:0;text-wrap:balance}
+.sub{margin:0;font-size:18px;opacity:.92}
+.btn{display:inline-block;background:var(--on-red);color:var(--red-dark);font-family:var(--display);font-weight:700;font-size:16px;padding:13px 22px;border-radius:999px;text-decoration:none}
+.btn:focus-visible,a:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+section{padding-block:44px;border-bottom:1px solid var(--line)}
+h2{font-family:var(--display);font-weight:700;font-size:24px;margin:0 0 12px}
+p{margin:0 0 12px;max-width:60ch}
+.en{color:var(--muted)}
+dl{display:grid;grid-template-columns:auto 1fr;gap:8px 20px;margin:0}
+dt{color:var(--muted)}dd{margin:0}
+a{color:var(--red)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a:not(.btn){color:#F08A7B}}
+:root[data-theme="dark"] a:not(.btn){color:#F08A7B}
+footer{padding-block:28px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="w">
+<h1>Crêpes &amp; Hot Chocolate aus der alten Cassons-Gondel</h1>
+<p class="sub">Berghaus Nagens · Flims Laax · Eröffnung im Dezember 2026</p>
+<p class="sub en">Crêpes &amp; hot chocolate in the old Cassons gondola. Opening December 2026.</p>
+<a class="btn" href="https://www.instagram.com/" rel="noopener">Folge uns auf Instagram</a>
+</div></header>
+<main class="w">
+<section>
+<h2>Die Gondel</h2>
+<p>Die alte Cassons-Gondel bekommt 70 Jahre nach ihrer ersten Fahrt ein zweites Leben: Wir bauen sie zu einem kleinen Stand für Crêpes und heisse Schokolade um, mitten am Berg.</p>
+<p class="en">Seventy years after its first ride, the old Cassons gondola gets a second life as a small stand for crêpes and hot chocolate, right on the mountain.</p>
+</section>
+<section>
+<h2>Wo</h2>
+<dl><dt>Ort</dt><dd>Berghaus Nagens, Laax (Flims Laax)</dd>
+<dt>Eröffnung</dt><dd>Dezember 2026, genaues Datum folgt</dd></dl>
+</section>
+<section>
+<h2>Kontakt</h2>
+<p>Fragen, Ideen oder Anfragen? Schreib uns:</p>
+<p><a href="mailto:ferdi@crepedeck.ch">ferdi@crepedeck.ch</a></p>
+</section>
+</main>
+<footer><div class="w">Crêpe Deck GmbH i.G. · Flims · ferdi@crepedeck.ch</div></footer>
+</body>
+</html>
